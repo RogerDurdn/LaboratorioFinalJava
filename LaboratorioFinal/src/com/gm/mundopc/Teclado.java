@@ -10,14 +10,14 @@ public class Teclado extends DispositivosEntrada {
 	public Teclado() {
 		
 	}
-	public Teclado(String tipoEntrada,String marca ) {
-		super(tipoEntrada,marca);
+	public Teclado(String tipoEntrada,String marca,double precio) {
+		super(tipoEntrada,marca,precio);
 		this.idTeclado = ++contadorTeclados;
 	}
 	@Override
 	
 	public String toString() {
-		return super.toString()+" id:"+idTeclado;
+		return " \tid:"+idTeclado+" "+super.toString();
 	}
 	
 	

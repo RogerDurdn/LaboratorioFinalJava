@@ -8,13 +8,13 @@ public class Raton extends DispositivosEntrada {
 	public Raton() {
 		
 	}
-	public Raton(String tipoEntrada,String marca) {
-		super(tipoEntrada,marca);
+	public Raton(String tipoEntrada,String marca,double precio) {
+		super(tipoEntrada,marca,precio);
 		this.idRaton = ++contadorRaton;
 	}
 	@Override
 	public String toString() {
-		return super.toString()+" id:"+idRaton;
+		return " \t\tid:"+idRaton+" "+super.toString();
 	}
 
 }

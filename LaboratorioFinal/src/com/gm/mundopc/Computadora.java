@@ -8,9 +8,10 @@ public class Computadora {
 	private Teclado teclado;
 	private Raton raton;
 	private static int cCom;
+	private double precio;
 	
 		public Computadora() {
-			this.idC = cCom;
+			this.idC = ++cCom;
 		}
 		public Computadora(String nombre,Monitor monitor, Teclado teclado, Raton raton) {
 			this();
@@ -35,6 +36,14 @@ public class Computadora {
 			public Raton getRaton() {
 				return raton;
 			}
+			public double getPrecio() {
+				double a = monitor.getPrecio();
+				double b = teclado.getPrecio();
+				double c = raton.getPrecio();
+				double total = a+b+c;
+				return total;
+			}
+			
 				@Override
 				public String toString() {
 					return "id:"+idC+" nombre:"+nombre+"\n"+
